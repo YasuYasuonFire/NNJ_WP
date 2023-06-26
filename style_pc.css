@@ -15,8 +15,9 @@ body { margin:0; padding:0; background:#fff; font-family:"Century Gothic",Arial,
 #left_col { width:630px; float:left; margin:20px 0 0 0; }
 
 /* 記事ページ、アーカイブページのみ、left_colのwidthをmain_colと同じ幅とする */
+/* パンくずリストを非表示にした分、不要なマージンは無しとする*/
 /* ADD by yasuyasu */
-.custom-class #left_col { width:950px; float:left; margin:20px 0 0 0; }
+.custom-class #left_col { width:950px; float:left; margin:0px 0 0 0; }
 
 #right_col { width:300px; float:right; margin:20px 0 0 0; }
 
@@ -97,7 +98,9 @@ body { margin:0; padding:0; background:#fff; font-family:"Century Gothic",Arial,
 #bread_crumb li a { color:#aaa; text-decoration:none; display:inline-block; }
 #bread_crumb li.home span { display:block; text-indent:-9999px; width:17px; height:16px; background:url(img/common/bread_home.gif) no-repeat left 1px; height:40px; line-height:40px; }
 #bread_crumb li.home a:hover span { background-position:left -39px; }
-
+/* 記事ページ上部のパンくずリストを非表示にする */
+/* ADD by yasuyasu */
+.custom-class #bread_crumb {display: none;}
 
 
 /* ----------------------------------------------------------------------
@@ -245,6 +248,9 @@ body { margin:0; padding:0; background:#fff; font-family:"Century Gothic",Arial,
 ---------------------------------------------------------------------- */
 #single_title { border:1px solid #ccc; overflow:hidden; }
 #single_title h2 { margin:0; font-size:16px; background:#ccc; color:#fff; padding:10px 15px; line-height:180%; }
+/* 記事ページのタイトルのフォントサイズを大きくする */
+/* ADD by yasuyasu */
+.custom-class #single_title h2 { font-size:24px; }
 #single_meta { margin:0; font-size:12px; overflow:hidden; background:#f9f9f9; }
 #single_meta li { float:left; padding:10px 15px; margin:0 0 -1px 0; border-right:1px dotted #ccc; border-bottom:1px dotted #ccc; line-height:100%; }
 #single_meta li:last-child { border:none; }

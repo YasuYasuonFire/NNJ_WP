@@ -222,9 +222,16 @@ a.menu_button:hover{ background: #333; }
 #single_meta { margin:0; padding:3px 15px; font-size:10px; overflow:hidden; }
 #single_meta li { float:left; padding:8px 0; margin:0 15px 0 0; line-height:100%; }
 #single_meta li.post_category { background:url(img/common/icon_category.png) no-repeat left 7px; padding-left:16px; }
+
+/* タグ、コメント、著者情報は表示不要 
 #single_meta li.post_tag { background:url(img/common/icon_tag.png) no-repeat left 7px;  padding-left:16px; }
 #single_meta li.post_comment { background:url(img/common/icon_comment.png) no-repeat left 7px;  padding-left:18px; }
 #single_meta li.post_author { background:url(img/common/icon_author.png) no-repeat left 7px;  padding-left:18px; }
+*/
+#single_meta li.post_tag { background:url(img/common/icon_tag.png) no-repeat left 7px;  padding-left:16px; display:none }
+#single_meta li.post_comment { background:url(img/common/icon_comment.png) no-repeat left 7px;  padding-left:18px; display:none  }
+#single_meta li.post_author { background:url(img/common/icon_author.png) no-repeat left 7px;  padding-left:18px; display:none  }
+
 #single_meta li a{ text-decoration: none; }
 
 #news_title { border:1px solid #ccc; overflow:hidden; }

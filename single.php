@@ -11,7 +11,8 @@
   <div id="single_title">
    <h2><?php the_title(); ?></h2>
    <ul id="single_meta" class="clearfix">
-    <?php if ($options['show_date']) : ?><li class="date"><?php the_time('Y/n/j'); ?></li><?php endif; ?>
+	 <!-- 時刻も表示するよう変更 -->
+    <?php if ($options['show_date']) : ?><li class="date"><?php the_time('Y/n/j'); ?> <?php the_time('H:i'); ?></li><?php endif; ?>
     <li class="post_category"><?php the_category(', '); ?></li>
     <?php the_tags('<li class="post_tag">',', ','</li>'); ?>
     <?php if ($options['show_comment']) : ?><li class="post_comment"><?php comments_popup_link(__('Write comment', 'tcd-w'), __('1 comment', 'tcd-w'), __('% comments', 'tcd-w')); ?></li><?php endif; ?>

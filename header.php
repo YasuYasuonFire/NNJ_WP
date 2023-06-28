@@ -225,7 +225,7 @@ a:hover, #index_featured_post .post2 h4.title a:hover, #index_featured_post a, #
 <!-- CoinMarketCap ウィジェット追加 -->
 <!-- ADD by yasuyasu -->
  <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
- <div id="coinmarketcap-widget-marquee" coins="1,1027,3890,5426,12885,825,3408" currency="JPY" theme="light" transparent="true" show-symbol-logo="true"></div>
+ <div id="coinmarketcap-widget-marquee" coins="1,1027,3890,5426,12885,3408,1839" currency="JPY" theme="light" transparent="true" show-symbol-logo="true"></div>
 <!-- ADD by yasuyasu -->
 	
  <!-- global menu -->

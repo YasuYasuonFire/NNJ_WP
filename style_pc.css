@@ -202,6 +202,10 @@ body { margin:0; padding:0; background:#fff; font-family:"Century Gothic",Arial,
 #post_list .image img { display:block; width:280px; height:210px; opacity:1; transition: opacity .4s ease-in-out; -moz-transition: opacity .4s ease-in-out; -webkit-transition: opacity .4s ease-in-out; -webkit-transform:rotate(0); -moz-transform: rotate(0); transform: rotate(0); }
 #post_list .image:hover img { opacity:0.5; }
 #post_list .info { float:left; width:300px; margin:15px 0 0 0; overflow:hidden; }
+/* アーカイブページのブログカードの内容幅を、left_colの幅に合わせ調整 */
+/* ADD by yasuyasu */
+.custom-class #post_list .info { width:65%; }
+
 #post_list .title { font-size:16px; margin:0 0 10px 0; line-height:160%; }
 #post_list .title a { text-decoration:none; display:block; }
 #post_list .title a:hover { text-decoration:underline; }

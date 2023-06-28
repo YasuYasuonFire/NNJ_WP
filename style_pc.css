@@ -76,7 +76,7 @@ body { margin:0; padding:0; background:#fff; font-family:"Century Gothic",Arial,
 
 /* CoinMarketCap Widget */
 /* ADD by yasuyasu */
-#coinmarketcap-widget-marquee { height:60px; width:1150px; margin:0 auto 5px auto; }
+#coinmarketcap-widget-marquee { height:60px; width:1150px; margin:0 auto 0 auto; }
 /* ADD by yasuyasu */
 
 /* global menu */

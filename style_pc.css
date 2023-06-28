@@ -316,11 +316,21 @@ body { margin:0; padding:0; background:#fff; font-family:"Century Gothic",Arial,
 #single_author_post li { float:left; display:inline-block; margin:0 0 -1px 0; width:314px; height:105px; border-bottom:1px solid #ccc; }
 #single_author_post li.odd { border-right:1px solid #ccc; width:313px; }
 #single_author_post li li { color:#999; float:none; display:inline; margin:0 0 5px 0; width:auto; font-size:11px; line-height:110%; border:none; height:auto; width:auto; }
+/* author postの幅調整。2列×3行で表示を維持する。*/
+/* ADD by yasuyasu */
+.custom-class #single_author_post li { width:calc(50% - 2px); }  
+.custom-class #single_author_post li.odd { width:calc(50% - 1px); }
+
+
 #single_author_post li li.date { border-right:1px solid #ccc; margin:0 5px 0 0; padding:0 9px 0 0; }
 #single_author_post .image { }
 #single_author_post .image img { width:100px; height:75px; display:block; float:left; margin:15px; }
 #single_author_post .image:hover img { opacity:0.5; }
 #single_author_post .info { width:170px; float:left; margin:15px 0 0 0; overflow:hidden; }
+/* author postのコンテンツ幅を調整*/
+/* ADD by yasuyasu */
+.custom-class #single_author_post .info { width:70%;}
+
 #single_author_post .title { font-size:13px; margin:0; }
 #single_author_post .title a { display:block; text-decoration:none; }
 #single_author_post li li a { color:#999; text-decoration:none; }

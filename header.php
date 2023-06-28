@@ -222,6 +222,12 @@ a:hover, #index_featured_post .post2 h4.title a:hover, #index_featured_post a, #
 
  </div><!-- END #header_wrap -->
 
+<!-- CoinMarketCap ウィジェット追加 -->
+<!-- ADD by yasuyasu -->
+ <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
+ <div id="coinmarketcap-widget-marquee" coins="1,1027,3890,5426,12885,825,3408" currency="JPY" theme="light" transparent="true" show-symbol-logo="true"></div>
+<!-- ADD by yasuyasu -->
+	
  <!-- global menu -->
  <?php if (has_nav_menu('global-menu')) { ?>
  <div id="global_menu" class="clearfix">

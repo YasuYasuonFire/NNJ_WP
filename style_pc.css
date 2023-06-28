@@ -74,6 +74,10 @@ body { margin:0; padding:0; background:#fff; font-family:"Century Gothic",Arial,
 .search_area #search_button input { cursor:pointer; float:right; height:35px; width:92px; line-height:42px; text-indent:150%; white-space:nowrap; overflow:hidden; display:block; border:none; background:url(img/header/search_button.gif) no-repeat left top; }
 .search_area #search_button input:hover { background-position:left bottom; }
 
+/* CoinMarketCap Widget */
+/* ADD by yasuyasu */
+#coinmarketcap-widget-marquee { height:60px; width:1150px; margin:0 auto 5px auto; }
+/* ADD by yasuyasu */
 
 /* global menu */
 .menu_button { display:none; }

@@ -293,6 +293,11 @@ body { margin:0; padding:0; background:#fff; font-family:"Century Gothic",Arial,
 #single_author_avatar { float:left; margin:0 10px 20px 0; }
 #single_author_avatar img { width:70px; height:70px; display:block; border:none; padding:0; }
 #single_author_meta { float:left; width:505px; position:relative; }
+
+/* auhor informationの幅を調整。右に空白部が出ないようにする */
+/* ADD by yasuyasu */
+.custom-class #single_author_meta { float:left; width:90%; position:relative; }
+
 #single_author_name { margin:0 0 10px 0; font-size:14px; line-height:160%; }
 #single_author_name2 { margin:0 0 0 15px; font-size:10px; }
 #single_author_link { color:#333; position:absolute; right:0px; top:0px; text-decoration:none; font-size:12px; background:#e8e8e8 url(img/common/arrow_right.png) no-repeat 16px 9px; padding:5px 20px 5px 30px; -moz-border-radius:4px; -khtml-border-radius:4px; -webkit-border-radius:4px; border-radius:4px; }

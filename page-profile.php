@@ -17,7 +17,7 @@ Template Name:Author Profile
     <?php
          $blogusers = get_users(array(
 				'orderby' => 'nickname',
-				'order' => 'DESC',
+				'order' => 'ASC',
 		 ));
          if ($blogusers) {
           foreach ($blogusers as $bloguser) {

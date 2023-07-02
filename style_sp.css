@@ -31,6 +31,11 @@ body {
 #mobile_banner_bottom { padding:0 0 30px; text-align:center; }
 #mobile_banner_bottom img { display:block; height:auto; max-width:100%; width:auto; margin:0 auto; }
 
+/* CoinMarketCap Widget */
+/* ADD by yasuyasu */
+#coin-marquee-container { width: 100%; }
+.coin-marquee-header {display: none;}
+/* ADD by yasuyasu */
 
 
 /* ----------------------------------------------------------------------

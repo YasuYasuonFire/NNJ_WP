@@ -15,7 +15,10 @@ Template Name:Author Profile
   <div id="profile_author_list">
    <ul>
     <?php
-         $blogusers = get_users();
+         $blogusers = get_users(array(
+				'orderby' => 'nickname',
+				'order' => 'DESC',
+		 ));
          if ($blogusers) {
           foreach ($blogusers as $bloguser) {
           $user_data = get_userdata($bloguser->ID);

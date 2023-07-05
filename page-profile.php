@@ -11,14 +11,18 @@ Template Name:Author Profile
 
  <div id="left_col">
 
-  <h2 class="headline2"><?php _e('Author List', 'tcd-w'); ?></h2>
+  <h2 class="headline2">運営メンバー</h2>
   <div id="profile_author_list">
    <ul>
     <?php
-         $blogusers = get_users(array(
-				'orderby' => 'nickname',
-				'order' => 'ASC',
-		 ));
+	   $blogusers = get_users(
+				array(
+				  'order' => 'ASC',
+				  'orderby' => 'meta_value',
+				  'meta_key' => 'nickname',
+				)
+			);
+
          if ($blogusers) {
           foreach ($blogusers as $bloguser) {
           $user_data = get_userdata($bloguser->ID);

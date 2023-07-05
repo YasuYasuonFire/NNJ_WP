@@ -19,6 +19,13 @@ body { margin:0; padding:0; background:#fff; font-family:"Century Gothic",Arial,
 /* ADD by yasuyasu */
 .custom-class #left_col { width:950px; float:left; margin:0px 0 0 0; }
 
+/* メンバー一覧ページにも、left_col幅の調整を適用する */
+/* パンくずリストを非表示にした分、不要なマージンは無しとする*/
+/* ADD by yasuyasu */
+.page-id-8082 #left_col { width:950px; float:left; margin:0px 0 0 0; } /*左カラムの幅を、記事ページと同様に広げる*/
+.page-id-8082  .profile_author_meta{ width: 85% } /*ブログカードの中身の幅調整*/
+
+
 #right_col { width:300px; float:right; margin:20px 0 0 0; }
 
 /* no side */

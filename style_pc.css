@@ -24,6 +24,12 @@ body { margin:0; padding:0; background:#fff; font-family:"Century Gothic",Arial,
 /* ADD by yasuyasu */
 .page-id-8082 #left_col { width:950px; float:left; margin:0px 0 0 0; } /*左カラムの幅を、記事ページと同様に広げる*/
 .page-id-8082  .profile_author_meta{ width: 85% } /*ブログカードの中身の幅調整*/
+.page-id-8082 .profile_author_avatar img {width:100px; height:100px; } /*画像サイズ*/
+
+/* 投稿者プロフィールページのレイアウト修正 */
+.author #author_avatar img {width:100px; height:100px; }
+.author #author_name {background: transparent; color: #333; } /*名前の表示箇所の背景削除、文字色をblackに*/
+.author #author_meta{ width: 85% } /*ブログカードの中身の幅調整*/
 
 
 #right_col { width:300px; float:right; margin:20px 0 0 0; }

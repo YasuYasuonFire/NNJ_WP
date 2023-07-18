@@ -548,7 +548,7 @@ if ( function_exists('register_post_type') ) {
 
 
 // カードリンクパーツ --------------------------------------------------------------------------------------
-add_image_size( 'size-card', 120, 120, true );
+add_image_size( 'size-card', 300, 300, true );
 
 function get_the_custom_excerpt($content, $length) {
   $length = ($length ? $length : 70);//デフォルトの長さを指定する

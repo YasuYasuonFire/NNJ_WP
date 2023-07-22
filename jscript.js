@@ -39,7 +39,7 @@ jQuery(document).ready(function($){
 
 function mediaQueryClass(width) {
 
- if (width > 769) { //PC
+ if (width > 950) { //PC
 
    $("html").removeClass("mobile");
    $("html").addClass("pc");

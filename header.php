@@ -28,9 +28,9 @@
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css<?php version_num(); ?>" type="text/css" />
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/comment-style.css<?php version_num(); ?>" type="text/css" />
 
-<link rel="stylesheet" media="screen and (min-width:769px)" href="<?php bloginfo('template_url'); ?>/style_pc.css<?php version_num(); ?>" type="text/css" />
-<link rel="stylesheet" media="screen and (max-width:768px)" href="<?php bloginfo('template_url'); ?>/style_sp.css<?php version_num(); ?>" type="text/css" />
-<link rel="stylesheet" media="screen and (max-width:768px)" href="<?php echo get_template_directory_uri(); ?>/footer-bar/footer-bar.css?ver=<?php echo version_num(); ?>">
+<link rel="stylesheet" media="screen and (min-width:951px)" href="<?php bloginfo('template_url'); ?>/style_pc.css<?php version_num(); ?>" type="text/css" />
+<link rel="stylesheet" media="screen and (max-width:950px)" href="<?php bloginfo('template_url'); ?>/style_sp.css<?php version_num(); ?>" type="text/css" />
+<link rel="stylesheet" media="screen and (max-width:950px)" href="<?php echo get_template_directory_uri(); ?>/footer-bar/footer-bar.css?ver=<?php echo version_num(); ?>">
 
 <?php if (strtoupper(get_locale()) == 'JA') ://to fix the font-size for japanese font ?>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/japanese.css<?php version_num(); ?>" type="text/css" />

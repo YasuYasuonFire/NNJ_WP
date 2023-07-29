@@ -376,7 +376,10 @@ a.menu_button:hover{ background: #333; }
 /* Author list page */
 #profile_author_list { margin:0; padding:0; }
 #profile_author_list li { border:1px solid #ccc; margin:20px 0; padding:15px 15px 0; -moz-border-radius:4px; -khtml-border-radius:4px; -webkit-border-radius:4px; border-radius:4px; background:#f9f9f9; }
-.profile_author_avatar { float:left; width:15%; margin:0 5% 20px 0; }
+/* ADD by yasuyasu */
+/* メンバー一覧の写真大きさ修正 */
+/* .profile_author_avatar { float:left; width:15%; margin:0 5% 20px 0; }*/
+.profile_author_avatar { float:left; width:75%; margin:0 5% 20px 0; }
 .profile_author_avatar img { width:100%; height:auto; display:block; border:none; padding:0; }
 .profile_author_meta_top { float:left; position:relative; width:75%; margin:-2px 0 15px 0; }
 .profile_author_name { margin:0 0 6px 0; font-size:16px; line-height:130%; }

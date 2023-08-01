@@ -35,9 +35,9 @@ Template Name:Author Profile
        <h2 class="profile_author_name"><?php echo $user_data->display_name; ?><?php if($user_data->post_name) { ?><span class="profile_author_name2"><?php echo $user_data->post_name; ?></span><?php }; ?></h2>
        <a class="profile_author_link" href="<?php echo get_author_posts_url($user_data->ID); ?>">投稿一覧</a>
       </div>
-      <?php if($user_data->profile2) { ?>
+      <?php if($user_data->description) { ?>
       <div class="profile_author_desc">
-       <?php echo wpautop($user_data->profile2); ?>
+       <?php echo wpautop($user_data->description); ?>
       </div>
       <?php }; ?>
      </div>

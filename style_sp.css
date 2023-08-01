@@ -125,8 +125,9 @@ body {
 #logo_text, #logo_image { float:left; margin:10px 15px; font-size:21px; line-height:140%; }
 #logo_text a, #logo_image a { text-decoration:none; }
 #logo_text a:hover, #logo_image a:hover { text-decoration:underline; }
-#logo_image img { display:none; }
-#logo_image a:before { content:attr(data-label); }
+/* PC画面で幅を狭め、cssがspに切り替わった時、logoを表示し続ける
+/* #logo_image img { display:none; } */
+/* #logo_image a:before { content:attr(data-label); } */
 
 #logo_image_mobile{ display: table-cell; vertical-align: middle; height: 60px; padding-left: 15px; }
 #logo_image_mobile a{ display: inline-block; height: 20px; margin: 0; text-decoration:none; }

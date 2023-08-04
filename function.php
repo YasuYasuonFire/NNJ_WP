@@ -368,7 +368,7 @@ function my_user_profile_edit_action($user) {
    <td><input type="text" name="post_name" id="post_name" value="<?php echo esc_attr( get_the_author_meta( 'post_name', $user->ID ) ); ?>" class="regular-text" /></td>
   </th>
   <tr>
-   <th><label for="profile2"><?php _e("Profile for Single post and Author list page","tcd-w"); ?></label></th>
+   <th><label for="profile2">記事の下に表示するプロフィール（短い文章で）</label></th>
    <td><textarea id="profile2" class="large-text" cols="50" rows="10" name="profile2"><?php echo esc_attr( get_the_author_meta( 'profile2', $user->ID ) ); ?></textarea></td>
   </tr>
  </table>
@@ -548,7 +548,7 @@ if ( function_exists('register_post_type') ) {
 
 
 // カードリンクパーツ --------------------------------------------------------------------------------------
-add_image_size( 'size-card', 300, 300, true );
+add_image_size( 'size-card', 1024, 1024, true );
 
 function get_the_custom_excerpt($content, $length) {
   $length = ($length ? $length : 70);//デフォルトの長さを指定する

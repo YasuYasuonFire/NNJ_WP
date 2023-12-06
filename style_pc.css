@@ -3,11 +3,20 @@
  pc style setting
 
 ---------------------------------------------------------------------- */
-
 /* ブラウザ幅を縮めていったときに、左端に余白を残しておく*/
 /* ADD by yasuyasu */
 /* body { margin:0; padding:0; background:#fff; font-family:"Century Gothic",Arial,sans-serif; color:#333; overflow-x:hidden; } */
 body { margin:0; padding-left: 20px; background:#fff; font-family:"Century Gothic",Arial,sans-serif; color:#333; overflow-x:hidden; }
+
+/* layout */
+/* #header_wrap { border-top:5px solid #222; width:100%; min-width:1150px; }
+#header { width:1150px; height:118px; margin:0 auto; position:relative; }
+#contents { width:1150px; margin:0 auto 70px; }
+#main_col { width:950px; float:left; margin:0; }
+#side_col { width:180px; float:right; margin:-41px 0 0 0; }
+#side_col.no_global_menu { margin:0; }
+#left_col { width:630px; float:left; margin:20px 0 0 0; }
+#right_col { width:300px; float:right; margin:20px 0 0 0; } */
 
 /* layout */
 #header_wrap { border-top:5px solid #222; width:100%; min-width:1150px; }
@@ -17,26 +26,23 @@ body { margin:0; padding-left: 20px; background:#fff; font-family:"Century Gothi
 #side_col { width:180px; float:right; margin:-41px 0 0 0; }
 #side_col.no_global_menu { margin:0; }
 #left_col { width:630px; float:left; margin:20px 0 0 0; }
+#right_col { width:300px; float:right; margin:20px 0 0 0; }
+
 
 /* 記事ページ、アーカイブページのみ、left_colのwidthをmain_colと同じ幅とする */
 /* パンくずリストを非表示にした分、不要なマージンは無しとする*/
 /* ADD by yasuyasu */
 .custom-class #left_col { width:950px; float:left; margin:0px 0 0 0; }
-
 /* メンバー一覧ページにも、left_col幅の調整を適用する */
 /* パンくずリストを非表示にした分、不要なマージンは無しとする*/
 /* ADD by yasuyasu */
 .page-id-8082 #left_col { width:950px; float:left; margin:0px 0 0 0; } /*左カラムの幅を、記事ページと同様に広げる*/
 .page-id-8082  .profile_author_meta{ width: 85% } /*ブログカードの中身の幅調整*/
 .page-id-8082 .profile_author_avatar img {width:200px; height:200px; } /*画像サイズ*/
-
 /* 投稿者プロフィールページのレイアウト修正 */
 .author #author_avatar img {width:100px; height:100px; }
 .author #author_name {background: transparent; color: #333; } /*名前の表示箇所の背景削除、文字色をblackに*/
 .author #author_meta{ width: 85% } /*ブログカードの中身の幅調整*/
-
-
-#right_col { width:300px; float:right; margin:20px 0 0 0; }
 
 /* no side */
 .page-template-page-noside-php #global_menu { width:950px; }
@@ -78,7 +84,7 @@ body { margin:0; padding-left: 20px; background:#fff; font-family:"Century Gothi
 .social_link li { float:left; margin:0 0 0 5px; }
 .social_link li a { display:block; width:22px; height:22px; text-decoration:none; text-indent:-9999px; }
 .social_link li.rss a { background:url(img/common/icon_rss.png) no-repeat left top; }
-.social_link li.twitter a { background:url(img/common/icon_twitter.png) no-repeat left top; }
+.social_link li.twitter a { background:url(img/common/icon_x.png) no-repeat left top; }
 .social_link li.facebook a { background:url(img/common/icon_facebook.png) no-repeat left top; }
 .social_link li a:hover { background-position:left bottom; }
 
@@ -97,7 +103,6 @@ body { margin:0; padding-left: 20px; background:#fff; font-family:"Century Gothi
 #coin-marquee-container { width: 100%; }
 .coin-marquee-header {display: none;}
 /* ADD by yasuyasu */
-
 
 /* global menu */
 .menu_button { display:none; }
@@ -293,7 +298,6 @@ body { margin:0; padding-left: 20px; background:#fff; font-family:"Century Gothi
 #single_meta li.post_author { background:url(img/common/icon_author.png) no-repeat 15px 11px;  padding-left:31px;  display:none }
 
 
-
 #news_title { border:1px solid #ccc; overflow:hidden; }
 #news_title h2 { margin:0; font-size:16px; background:#ccc; color:#fff; padding:10px 15px; line-height:180%; }
 #news_title p { margin:0 15px; font-size:12px; overflow:hidden; }
@@ -321,7 +325,6 @@ body { margin:0; padding-left: 20px; background:#fff; font-family:"Century Gothi
 #single_author_avatar { float:left; margin:0 10px 20px 0; }
 #single_author_avatar img { width:70px; height:70px; display:block; border:none; padding:0; }
 #single_author_meta { float:left; width:505px; position:relative; }
-
 /* auhor informationの幅を調整。右に空白部が出ないようにする */
 /* ADD by yasuyasu */
 .custom-class #single_author_meta { float:left; width:90%; position:relative; }
@@ -345,7 +348,6 @@ body { margin:0; padding-left: 20px; background:#fff; font-family:"Century Gothi
 .custom-class #single_author_post li { width:calc(50% - 2px); }  
 .custom-class #single_author_post li.odd { width:calc(50% - 1px); }
 
-
 #single_author_post li li.date { border-right:1px solid #ccc; margin:0 5px 0 0; padding:0 9px 0 0; }
 #single_author_post .image { }
 #single_author_post .image img { width:100px; height:75px; display:block; float:left; margin:15px; }
@@ -354,7 +356,6 @@ body { margin:0; padding-left: 20px; background:#fff; font-family:"Century Gothi
 /* author postのコンテンツ幅を調整*/
 /* ADD by yasuyasu */
 .custom-class #single_author_post .info { width:70%;}
-
 #single_author_post .title { font-size:13px; margin:0; }
 #single_author_post .title a { display:block; text-decoration:none; }
 #single_author_post li li a { color:#999; text-decoration:none; }
@@ -431,14 +432,14 @@ background:url(img/common/arrow1.png) no-repeat left 3px; padding:0 0 0 11px; }
   -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
 }
 #footer_social_link li a:hover{ }
-#footer_social_link li.twitter:before { content:'\e904'; }
+#footer_social_link li.twitter:before { font-family: 'tiktok_x_icon'; content: "\e901"; }
 #footer_social_link li.facebook:before { content:'\e902'; }
 #footer_social_link li.insta:before { content:'\ea92'; }
 #footer_social_link li.pint:before { content:'\e905'; }
 #footer_social_link li.flickr:before { content:'\eaa4'; }
 #footer_social_link li.tumblr:before { content:'\eab9'; }
 #footer_social_link li.rss:before { content:'\e90b'; }
-#footer_social_link li.twitter:hover:before { color:#16b9dc; }
+#footer_social_link li.twitter:hover:before { color:#000; }
 #footer_social_link li.facebook:hover:before { color:#3B5998; }
 #footer_social_link li.insta:hover:before { color:#8a3ab9; }
 #footer_social_link li.rss:hover:before { color:#ffcc00; }

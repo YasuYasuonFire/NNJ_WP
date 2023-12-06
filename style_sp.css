@@ -37,7 +37,6 @@ body {
 .coin-marquee-header {display: none;}
 /* ADD by yasuyasu */
 
-
 /* ----------------------------------------------------------------------
  index
 ---------------------------------------------------------------------- */
@@ -228,7 +227,6 @@ a.menu_button:hover{ background: #333; }
 #single_meta { margin:0; padding:3px 15px; font-size:10px; overflow:hidden; }
 #single_meta li { float:left; padding:8px 0; margin:0 15px 0 0; line-height:100%; }
 #single_meta li.post_category { background:url(img/common/icon_category.png) no-repeat left 7px; padding-left:16px; }
-
 /* タグ、コメント、著者情報は表示不要 
 #single_meta li.post_tag { background:url(img/common/icon_tag.png) no-repeat left 7px;  padding-left:16px; }
 #single_meta li.post_comment { background:url(img/common/icon_comment.png) no-repeat left 7px;  padding-left:18px; }
@@ -237,7 +235,6 @@ a.menu_button:hover{ background: #333; }
 #single_meta li.post_tag { background:url(img/common/icon_tag.png) no-repeat left 7px;  padding-left:16px; display:none }
 #single_meta li.post_comment { background:url(img/common/icon_comment.png) no-repeat left 7px;  padding-left:18px; display:none  }
 #single_meta li.post_author { background:url(img/common/icon_author.png) no-repeat left 7px;  padding-left:18px; display:none  }
-
 #single_meta li a{ text-decoration: none; }
 
 #news_title { border:1px solid #ccc; overflow:hidden; }
@@ -376,15 +373,14 @@ a.menu_button:hover{ background: #333; }
 
 /* Author list page */
 #profile_author_list { margin:0; padding:0; }
+/*#profile_author_list li { border:1px solid #ccc; margin:20px 0; padding:15px 15px 0; -moz-border-radius:4px; -khtml-border-radius:4px; -webkit-border-radius:4px; border-radius:4px; background:#f9f9f9; }*/
 /* 写真の位置を修正 */
-/* #profile_author_list li { border:1px solid #ccc; margin:20px 0; padding:15px 15px 0; -moz-border-radius:4px; -khtml-border-radius:4px; -webkit-border-radius:4px; border-radius:4px; background:#f9f9f9; } */
-#profile_author_list li { border:1px solid #ccc; margin:20px 0; padding:15px 15px 0; -moz-border-radius:4px; -khtml-border-radius:4px; -webkit-border-radius:4px; border-radius:4px; background:#f9f9f9;     display: flex; align-items: center; justify-content: space-evenly; align-content: space-around;flex-wrap: wrap;}
+#profile_author_list li { border:1px solid #ccc; margin:20px 0; padding:15px 15px 0; -moz-border-radius:4px; -khtml-border-radius:4px; -webkit-border-radius:4px; border-radius:4px; background:#f9f9f9;display: flex; align-items: center; justify-content: space-evenly; align-content: space-around;flex-wrap: wrap;}
 /* ADD by yasuyasu */
 /* メンバー一覧の写真大きさ修正 */
-/* .profile_author_avatar { float:left; width:15%; margin:0 5% 20px 0; }*/
+/*.profile_author_avatar { float:left; width:15%; margin:0 5% 20px 0; }*/
 .profile_author_avatar { float:left; width:75%; margin:0 0 20px 0; }
 .profile_author_avatar img { width:100%; height:auto; display:block; border:none; padding:0; }
-
 /* メンバーの名前、投稿者プロフィールボタンをセンタリング */
 .profile_author_meta {display: flex; flex-wrap: wrap; justify-content: center;}
 /* .profile_author_meta_top { float:left; position:relative; width:75%; margin:-2px 0 15px 0; } */
@@ -488,14 +484,14 @@ a.menu_button:hover{ background: #333; }
   width:17px; height:17px; line-height:17px;
   -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
 }
-#footer_social_link li.twitter:before { content:'\e904'; }
+#footer_social_link li.twitter:before { font-family: 'tiktok_x_icon'; content: "\e901"; }
 #footer_social_link li.facebook:before { content:'\e902'; }
 #footer_social_link li.insta:before { content:'\ea92'; top:11px; }
 #footer_social_link li.pint:before { content:'\e905'; top:11px; }
 #footer_social_link li.flickr:before { content:'\eaa4'; top:11px; }
 #footer_social_link li.tumblr:before { content:'\eab9'; top:11px; }
 #footer_social_link li.rss:before { content:'\e90b'; }
-#footer_social_link li.twitter:hover:before { color:#16b9dc; }
+#footer_social_link li.twitter:hover:before { color:#000; }
 #footer_social_link li.facebook:hover:before { color:#3B5998; }
 #footer_social_link li.insta:hover:before { color:#8a3ab9; }
 #footer_social_link li.rss:hover:before { color:#ffcc00; }

@@ -11,18 +11,17 @@ Template Name:Author Profile
 
  <div id="left_col">
 
-  <h2 class="headline2">運営メンバー</h2>
+  <h2 class="headline2">運営メンバー</h2>
   <div id="profile_author_list">
    <ul>
     <?php
-	   $blogusers = get_users(
+         $blogusers = get_users(
 				array(
 				  'order' => 'ASC',
 				  'orderby' => 'meta_value',
 				  'meta_key' => 'nickname',
 				)
 			);
-
          if ($blogusers) {
           foreach ($blogusers as $bloguser) {
           $user_data = get_userdata($bloguser->ID);
@@ -33,7 +32,7 @@ Template Name:Author Profile
      <div class="profile_author_meta">
       <div class="profile_author_meta_top">
        <h2 class="profile_author_name"><?php echo $user_data->display_name; ?><?php if($user_data->post_name) { ?><span class="profile_author_name2"><?php echo $user_data->post_name; ?></span><?php }; ?></h2>
-       <a class="profile_author_link" href="<?php echo get_author_posts_url($user_data->ID); ?>">投稿一覧</a>
+		  <a class="profile_author_link" href="<?php echo get_author_posts_url($user_data->ID); ?>">投稿一覧</a>
       </div>
       <?php if($user_data->description) { ?>
       <div class="profile_author_desc">

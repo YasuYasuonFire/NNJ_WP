@@ -51,6 +51,10 @@ require_once ( dirname(__FILE__) . '/admin/theme-options.php' );
 require_once ( dirname(__FILE__) . '/functions/update_notifier.php' );
 
 
+// マニュアル --------------------------------------------------------------------------------
+require_once  ( dirname(__FILE__) . '/functions/manual.php' );
+
+
 // 複数投稿者機能 --------------------------------------------------------------------------------
 require_once ( dirname(__FILE__) . '/co-authors-plus/co-authors-plus.php' );
 
@@ -368,8 +372,8 @@ function my_user_profile_edit_action($user) {
    <td><input type="text" name="post_name" id="post_name" value="<?php echo esc_attr( get_the_author_meta( 'post_name', $user->ID ) ); ?>" class="regular-text" /></td>
   </th>
   <tr>
-   <th><label for="profile2">記事の下に表示するプロフィール（短い文章で）</label></th>
-   <td><textarea id="profile2" class="large-text" cols="50" rows="10" name="profile2"><?php echo esc_attr( get_the_author_meta( 'profile2', $user->ID ) ); ?></textarea></td>
+  <th><label for="profile2">記事の下に表示するプロフィール（短い文章で）</label></th>
+  <td><textarea id="profile2" class="large-text" cols="50" rows="10" name="profile2"><?php echo esc_attr( get_the_author_meta( 'profile2', $user->ID ) ); ?></textarea></td>
   </tr>
  </table>
 <?php
@@ -604,7 +608,6 @@ function clink_scode($atts) {
       }
 
 add_shortcode("clink", "clink_scode");
-
 //記事、アーカイブページでleft_colのwidth指定を変更するための設定
 //ADD by yasuyasu
 function my_body_classes($classes) {
@@ -614,7 +617,6 @@ function my_body_classes($classes) {
     return $classes;
 }
 add_filter('body_class','my_body_classes');
-
 
 // カスタムコメント --------------------------------------------------------------------------------------
 
